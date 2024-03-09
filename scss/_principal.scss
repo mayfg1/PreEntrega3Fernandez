@@ -1,0 +1,213 @@
+nav {
+    background: linear-gradient(to right, $color-gradienteinicio, $color-gradientefin); /* Fondo azul degradado */
+    padding: 10px;
+    text-align: $alineacion;
+    a {
+        color: $color-fondo;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        font-weight: bold; 
+    }
+    &-link {
+        color: $color-fondo;
+        &:hover {
+            color: $color-gradientefin; 
+        }
+         
+    }
+}
+.navbar-toggler {
+    border-color: $color-fondo;
+}
+
+#home {
+    @include mas-usados (flex,center,2rem);
+    .embed-responsive {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        &::before {
+            display: block;
+            content: "";
+          }
+      }
+  }
+   
+#destacados {
+ @include mas-usados (flex,center,2rem);
+  &.card-img-top {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+}
+
+#Ubicacion {
+    @include mas-usados (flex,center,2rem);
+    p {
+        font-size: map-get($size-titulo, titulo3);
+        color: $color-textosecundario;
+      }
+  }
+
+#Seccion-servicio {
+    @include mas-usados (flex,center,2rem);
+    .card-img-top {
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px; 
+        margin-bottom: 15px; 
+    }
+}
+
+#v-pills-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.nav-pills .nav-link {
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    text-align: $alineacion;
+    color: $color-gradientefin;
+    background-color:$color-fondo;
+    border: 1px solid $color-gradientefin; /* Borde */
+    border-radius: 0.25rem;
+    &.active {
+        color: $color-fondo;
+        background-color: $color-gradienteinicio; 
+        border-color: $color-gradienteinicio;
+    }
+}
+
+.text-start {
+    text-align: start; 
+    p {
+        color: $color-textosecundario;
+        text-align: left;
+        font-size: map-get($size-titulo, titulo3);
+      }
+}
+
+#especialidades {
+    @include mas-usados (flex,center,2rem);
+    .card {
+        border: 1px solid $color-fondo;; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        &-body {
+            padding: 20px; 
+        }
+    }
+    .custom-card-1 {
+        background-color: #4fdbcf; 
+        color: $color-fondo; 
+    }
+    .custom-card-2 {
+        background-color: #0e408b; 
+        color: $color-fondo; 
+    }
+    .custom-card-3 {
+        background-color: #9bb9d4;
+        color: $color-fondo; 
+    }
+    p {
+        color: $color-textosecundario;
+      }
+  }
+
+form {
+    width: 400px;
+    margin: 50px;
+    background-color: $color-gradienteinicio;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $color-textosecundario;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid  $color-fondo;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: $color-gradienteinicio;
+    color:  $color-fondo;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*MEDIA QUERYS*/
+@media (max-width: 600px) {
+    header h1 {
+        font-size: map-get($size-titulo, titulo2);
+    }
+    .highlighted-section {
+        background-color: #7cbbff;
+        h2 {
+            font-size: map-get($size-titulo, titulo4);
+            margin-bottom: 1rem;
+          }
+        .mt-3 {
+            font-size: map-get($size-titulo, titulo4);
+            color: $color-fondo; 
+          }
+    }
+
+    #especialidades {
+        @include mas-usados (flex,center,1rem);
+        .card {
+            border: 1px solid $color-fondo;; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            &-body {
+                padding: 20px; 
+            }
+        }
+        .custom-card-1 {
+            background-color: #4fdbcf; 
+            color: $color-fondo; 
+        }
+        .custom-card-2 {
+            background-color: #0e408b; 
+            color: $color-fondo; 
+        }
+        .custom-card-3 {
+            background-color: #9bb9d4;
+            color: $color-fondo; 
+        }
+        p {
+            color: $color-fondo;
+          }
+      }
+      .text-start {
+        text-align: start; 
+        h4 {
+            text-align: left;
+            font-size: 0.8rem;
+          }
+        p {
+            color: $color-fondo;
+            text-align: left;
+            font-size: 0.8rem;
+          }
+        
+    }
+}

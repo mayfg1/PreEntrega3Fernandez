@@ -1,0 +1,329 @@
+/*Esta en reset*/
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f0f081;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/logo3.png'); 
+    background-repeat: repeat; 
+    background-position: center center ; 
+  }
+  
+  
+ /*Esta en header*/
+  header {
+      background-image: url(../assets/banner-fondo.jpg);
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 50px 0; /* Ajusta el padding para controlar la altura del header */
+      text-align: center;
+  }
+  
+  h1 {
+      font-size: 3em; /* Ajusta el tamaño de la fuente del título */
+  }
+  
+/*Esta en principal*/
+  nav {
+      background: linear-gradient(to right, #00c3ff, #000a63); /* Fondo azul degradado */
+      padding: 10px;
+      text-align: center;
+  }
+  
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      font-weight: bold; 
+  }
+  
+  .navbar-toggler {
+      border-color: white;
+  }
+    
+  .nav-link {
+      color: white;
+  }
+    
+  .nav-link:hover {
+      color: #06022e; 
+  }
+    
+  
+  
+  
+  /*Esta en reset*/
+  
+  .highlighted-section {
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 800px;
+  }
+  
+  .highlighted-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .row {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #010f5e;
+    border-color: #010f5e;
+    transform: scale(1.1); /* Ajusta el valor según tus preferencias */
+    transition: transform 0.3s ease; /* Ajusta la duración y el tipo de transición según tus preferencias */
+  }
+  
+  
+  
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+  
+  iframe:hover {
+    opacity: 0.8;
+  }
+  
+  h2, h4 {
+    color: #007bff;
+  }
+  
+  p {
+    line-height: 1.6; 
+    text-align: center; 
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+
+  
+  /*esta en principal*/
+  #home {
+      display: flex;
+      justify-content: center;
+    }
+     
+  #home .embed-responsive {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+  #home .embed-responsive::before {
+      display: block;
+      content: "";
+    }
+  
+  
+  #destacados {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  #destacados.card-img-top {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+  
+  
+  #Ubicacion {
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+  
+    #Ubicacion p {
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+    
+  
+  
+  
+  /*esta en principal*/
+  #Seccion-servicio {
+      display: flex;
+      justify-content: center;
+  }
+  
+  #v-pills-tab {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+  }
+  
+  .nav-pills .nav-link {
+      padding: 10px;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      color: #02386d;
+      background-color: #f8f9fa; 
+      border: 1px solid #02386d; /* Borde */
+      border-radius: 0.25rem;
+  }
+  
+  .nav-pills .nav-link.active {
+      color: #fff;
+      background-color: #007bff; 
+      border-color: #007bff; 
+  }
+  
+  #Seccion-servicio .card-img-top {
+      width: 100%; 
+      height: auto; 
+      border-radius: 8px; 
+      margin-bottom: 15px; 
+  }
+  
+  .text-start {
+      text-align: start; 
+  }
+  
+  .text-start p {
+    color: #6c757d;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  
+  
+ /*esta en principal*/
+  #especialidades {
+      justify-content: center;
+    }
+  
+  #especialidades .card {
+      border: 1px solid #e3e3e3; /* Añade un borde a las tarjetas */
+      border-radius: 10px; /* Agrega esquinas redondeadas a las tarjetas */
+      overflow: hidden; /* Evita que los bordes redondeados se vean desbordados */
+  }
+  
+  #especialidades .card-body {
+      padding: 20px; /* Ajusta el relleno del cuerpo de la tarjeta */
+  }
+  
+  #especialidades .custom-card-1 {
+      background-color: #4fdbcf; 
+      color: #fff; 
+  }
+  
+  #especialidades .custom-card-2 {
+      background-color: #1b7ec0; 
+      color: #fff;
+  }
+  
+  #especialidades .custom-card-3 {
+      background-color: #9bb9d4;
+      color: #fff;
+  }
+  
+  #especialidades p {
+    color: #464545;
+  }
+  
+  
+  /*esta en principal*/
+  form {
+      width: 400px;
+      margin: 50px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #6c757d;
+  }
+  
+  select, input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  
+  button {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  
+  /*esta en footer*/
+  .pie {
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to right, #00c3ff, #000a63);
+  }
+    
+  .pie p {
+      font-size: 1rem;
+      text-align: center;
+    }
+    
+  .redes-sociales {
+      margin-top: 1rem;
+    }
+    
+  .redes-sociales a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    
+  .redes-sociales i {
+      font-size: 1.5rem;
+    }
+    
+  .redes-sociales span {
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+    
+  
+  

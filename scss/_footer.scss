@@ -1,0 +1,31 @@
+
+.pie {
+    color: $color-fondo;
+    text-align: $alineacion;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, $color-gradienteinicio, $color-gradientefin);
+    p {
+        font-size: 1rem;
+        text-align: $alineacion;
+        color: $color-fondo;
+      }
+      .redes-sociales {
+        margin-top: 1rem;
+        a {
+            color: $color-fondo;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            i {
+                font-size: 1.5rem;
+              }
+          }
+          span {
+            display: inline-block;
+            margin-left: 0.5rem;
+          }
+          
+      }
+}
+  

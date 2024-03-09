@@ -1,0 +1,10 @@
+//reset
+@import './reset/variables';
+@import './reset/reset';
+
+//Este archivo contiene el menu principal
+@import '_header';
+@import '_principal';
+@import '_footer';
+
+//mediasquerys

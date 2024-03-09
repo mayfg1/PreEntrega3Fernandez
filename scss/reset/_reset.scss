@@ -1,0 +1,75 @@
+body {
+    font-family: $fuente;
+    background-color: $color-fondo;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/logo3.png'); 
+    background-repeat: repeat; 
+    background-position: $alineacion $alineacion; 
+  }
+
+  
+.highlighted-section {
+    padding: 20px;
+    background-color: $color-fondo;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: $alineacion;
+    max-width: 800px;
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+}
+
+.row {
+  justify-content: $alineacion;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  &-primary {
+    color: $color-fondo;
+    background-color: $color-gradienteinicio;
+    border-color: $color-gradienteinicio;
+    &:hover {
+        background-color: $color-gradientefin;
+        border-color: $color-gradientefin;
+        transform: scale(1.1); /* Ajusta el valor según tus preferencias */
+        transition: transform 0.3s ease; /* Ajusta la duración y el tipo de transición según tus preferencias */
+      }
+      
+    }
+    
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+h2, h4 {
+  color: $color-h2;
+}
+
+p {
+  line-height: 1.6; 
+  text-align: $alineacion; 
+  font-size: 1.2rem;
+  color: $color-textosecundario;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}

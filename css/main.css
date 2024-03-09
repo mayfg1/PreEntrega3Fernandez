@@ -1,0 +1,340 @@
+@charset "UTF-8";
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/logo3.png");
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+.highlighted-section {
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+}
+.highlighted-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #3896fa;
+  border-color: #3896fa;
+}
+.btn-primary:hover {
+  background-color: #020a4e;
+  border-color: #020a4e;
+  transform: scale(1.1); /* Ajusta el valor según tus preferencias */
+  transition: transform 0.3s ease; /* Ajusta la duración y el tipo de transición según tus preferencias */
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+iframe:hover {
+  opacity: 0.8;
+}
+
+h2, h4 {
+  color: #007bff;
+}
+
+p {
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+/*Menu navegacion*/
+header {
+  background-image: url(../assets/banner-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px 0; /* Ajusta el padding para controlar la altura del header */
+  text-align: center;
+}
+header h1 {
+  font-size: 3em; /* Ajusta el tamaño de la fuente del título */
+}
+
+nav {
+  background: linear-gradient(to right, #3896fa, #020a4e); /* Fondo azul degradado */
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav-link {
+  color: #ffffff;
+}
+nav-link:hover {
+  color: #020a4e;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#home .embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+#home .embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+#destacados {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#destacados.card-img-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+#Ubicacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#Ubicacion p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+#Seccion-servicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#Seccion-servicio .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#v-pills-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.nav-pills .nav-link {
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #020a4e;
+  background-color: #ffffff;
+  border: 1px solid #020a4e; /* Borde */
+  border-radius: 0.25rem;
+}
+.nav-pills .nav-link.active {
+  color: #ffffff;
+  background-color: #3896fa;
+  border-color: #3896fa;
+}
+
+.text-start {
+  text-align: start;
+}
+.text-start p {
+  color: #6c757d;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#especialidades {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#especialidades .card {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#especialidades .card-body {
+  padding: 20px;
+}
+#especialidades .custom-card-1 {
+  background-color: #4fdbcf;
+  color: #ffffff;
+}
+#especialidades .custom-card-2 {
+  background-color: #0e408b;
+  color: #ffffff;
+}
+#especialidades .custom-card-3 {
+  background-color: #9bb9d4;
+  color: #ffffff;
+}
+#especialidades p {
+  color: #6c757d;
+}
+
+form {
+  width: 400px;
+  margin: 50px;
+  background-color: #3896fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3896fa;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*MEDIA QUERYS*/
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .highlighted-section {
+    background-color: #7cbbff;
+  }
+  .highlighted-section h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .highlighted-section .mt-3 {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  #especialidades {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  #especialidades .card {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #especialidades .card-body {
+    padding: 20px;
+  }
+  #especialidades .custom-card-1 {
+    background-color: #4fdbcf;
+    color: #ffffff;
+  }
+  #especialidades .custom-card-2 {
+    background-color: #0e408b;
+    color: #ffffff;
+  }
+  #especialidades .custom-card-3 {
+    background-color: #9bb9d4;
+    color: #ffffff;
+  }
+  #especialidades p {
+    color: #ffffff;
+  }
+  .text-start {
+    text-align: start;
+  }
+  .text-start h4 {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  .text-start p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}
+.pie {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #3896fa, #020a4e);
+}
+.pie p {
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+.pie .redes-sociales {
+  margin-top: 1rem;
+}
+.pie .redes-sociales a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.pie .redes-sociales a i {
+  font-size: 1.5rem;
+}
+.pie .redes-sociales span {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
